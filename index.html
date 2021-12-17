@@ -44,7 +44,7 @@
     <section class="hero">
         <div class="contener">
             <h1 class="hero-title">Эффективные решения</br> для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <button class="hero-button" data-modal-open type="button">Заказать услугу</button>
         </div>
         </section>
     <!-- ===========Секция герой конец=========== -->
@@ -103,13 +103,29 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="section-list link">
             <li class="item">
-                <img src="./images/img.jpg" alt="компьютер мужские руки печатают" width="370" />
+                <div class="tumb-img">
+                    <img src="./images/img.jpg" alt="компьютер мужские руки печатают" width="370" />
+                <div class="tumb-text">
+                    <h3 class="tumb-title">Десктопные приложения</h3>
+                </div>
+                </div>
+                
             </li>
             <li class="item">
-                <img src="./images/imga.jpg" alt="компьютер в женской левой руке телефон" width="370" />
+                <div class="tumb-img">
+                    <img src="./images/imga.jpg" alt="компьютер в женской левой руке телефон" width="370" />
+                <div class="tumb-text">
+                    <h3 class="tumb-title">Мобильные приложения</h3>
+                </div>
+                
             </li>
             <li class="item">
-                <img src="./images/imgb.jpg" alt="планшет в руках с выбором цветов" width="370" />
+                <div class="tumb-img">
+                    <img src="./images/imgb.jpg" alt="планшет в руках с выбором цветов" width="370" />
+                <div class="tumb-text">
+                    <h3 class="tumb-title">Дизайнерские решения</h3>
+                </div>
+                
             </li>
         </ul>
     </div>
@@ -389,6 +405,18 @@
     
      </footer>
     <!-- ===========подвал конец=========== -->
-
+<!-- модальное окно-->
+<div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" data-modal-close type="button">
+                
+                <svg class="modal-icon">
+                    <use href="/images/close.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+</div>
+<!-- модальное окно-->
+<script src="./js/modal.js"></script>
 </body>
 </html>
