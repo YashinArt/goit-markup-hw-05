@@ -618,6 +618,9 @@ img{
     border-radius: 4px;
 }
 .sign-button{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
     color: var(--hero-title-color);
     background-color: var(--accent-text-color);
     font-family: inherit;
@@ -739,19 +742,40 @@ textarea{
 .form-li{
     display: flex;
     flex-direction: column;
-
-    margin-bottom: 10px;
+        margin-bottom: 10px;
     
 }
 .form-label{
     margin-bottom: 4px;
 }
 .form-input{
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     font-size: 14px;
     margin: 0;
     padding: 14px 15px;
+}
+.form-div{
+    position: relative;
+}
+.form-icon{
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    
+}
+.form-input:focus + .form-icon,
+.form-input:not(:placeholder-shown) + .form-icon{
+    fill: var(--accent-text-color);
+}
+.form-input:focus,
+.form-input:not(:placeholder-shown),
+.form-textarea:not(:placeholder-shown){
+    border: 1px solid var(--accent-text-color);
 }
 .form-textarea{
     
@@ -772,11 +796,14 @@ textarea{
     
 }
 .submit-button{
+    
+    width: 200px;
+    height: 50px;
     color: var(--hero-title-color);
     background-color: var(--accent-text-color);
     font-family: inherit;
     border-radius: 4px;
-    padding: 10px 32px;
+    padding: 10px 29px;
     text-align: center;
 
     cursor: pointer;
@@ -788,6 +815,11 @@ textarea{
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.sign-icon{
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
 }
 /*=========== Подпишитесь ===========  */
 /* ===========Портфолио=========== */
