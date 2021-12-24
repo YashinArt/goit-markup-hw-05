@@ -127,7 +127,7 @@ img{
     letter-spacing: 0.02em;
 
     transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 1050ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact .link:hover,
@@ -283,7 +283,7 @@ img{
 /* ================================= */
 .features-title {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -512,6 +512,7 @@ img{
 } */
 .contener-features{
     align-content: center;
+    margin-right: 93px;
 }
 .contener-features .features-title {
     color: var(--hero-title-color);
@@ -595,9 +596,51 @@ img{
 .page-footer-contact .item{
     margin-top: 9px;
 }
+/*Подпишитесь на рассылку  */
+.sign-form{
+    display: flex;
+}
+.sign-features .features-title{
+    color: var(--hero-title-color);
+}
+.sign-input{
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact);
+    background-color: var(--background-footer-color);
 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.sign-button{
+    color: var(--hero-title-color);
+    background-color: var(--accent-text-color);
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+}
+/* Подпишитесь на рассылку */
 /* ===========модальное окно=========== */
 .backdrop{
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -632,7 +675,7 @@ img{
     top: 8px;
     right: 8px;
 
-    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     display: inline-flex;
     align-items: center;
@@ -646,17 +689,107 @@ img{
     border: 1px solid rgba(0, 0, 0, 0,1);
     border-radius: 50%;
     cursor: pointer;
+    z-index: 1;
 }
 .modal-button:hover,
 .modal-button:focus{
-    background-color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+    
 }
 .modal-icon{
     width: 14px;
     height: 14px;
-}
+    }
 /* ===========модальное окно=========== */
+/*=========== Подпишитесь ===========  */
 
+.backdrop-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+textarea{
+    resize: none;
+}
+.form {
+    width: 528px;
+    min-height: 581px;
+    outline: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+.form-title{
+    margin-bottom: 12px;
+
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.form-list {
+    
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
+.form-li{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+    
+}
+.form-label{
+    margin-bottom: 4px;
+}
+.form-input{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 15px;
+}
+.form-textarea{
+    
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0;
+    padding: 12px 16px;
+}
+.form-label input::placeholder{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    
+}
+.submit-button{
+    color: var(--hero-title-color);
+    background-color: var(--accent-text-color);
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-align: center;
+
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+/*=========== Подпишитесь ===========  */
 /* ===========Портфолио=========== */
 .site-nav .current{
     position: relative;
